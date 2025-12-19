@@ -1,0 +1,47 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(255, 244, 233, 1);
+    user-select: none;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(232, 219, 197, 1);
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.439);
+}
+
+.timer {
+    font-size: 3em;
+    margin: 20px;
+    color: #373F51;
+}
+
+.controls button {
+    transition: .5s;
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px;
+    width: 6em;
+    height: 3em;
+    background-color: #DAA49A;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: rgba(177, 133, 167, 1);
+}
+
+#youtubePlayer{
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
