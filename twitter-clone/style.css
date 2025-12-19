@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    overflow: scroll;
+}
+
+.links{
+    letter-spacing: 0px;
+    font-family: "Poppins";
+    font-size: 13px;
+    margin-left: 6px;
+    text-decoration: none;
+    color: #71767b;
+}
+
+.label{
+    color: #71767b;
+}
+
+.font{
+    font-family: "poppins";
+    font-size: 64px;
+    font-weight:bold;
+    margin-top: 50px;
+}
+
+.font2{
+    font-family: "Poppins";
+    font-size: 31px;
+    font-weight:bold;
+    margin-top: 34px;
+    margin-right: 40px; 
+    margin-bottom: 30px;
+}
+
+.btn-google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:320px;
+    color: #3c4043;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius:30px;
+    padding: 8px;
+    font-family: "Poppins";
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 13px;
+}
+
+.btn-apple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:320px;
+    color: #3c4043;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius:30px;
+    padding: 6px;
+    font-family: "Poppins";
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 13px;
+}
+
+.btn3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:320px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    background-color: rgb(29, 155, 240);
+    border:1px solid rgb(29, 155, 240);
+    border-radius:30px;
+    padding: 8px;
+    font-family: "Poppins";
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 13px;
+}
+
+.r-gu4em3 {
+    background-color: rgb(47, 51, 54);
+}
+
+.r-109y4c4 {
+    height: 1px;
+    width: 140px;
+}
+
+.or{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.container-l{
+    background-image: url(/twitter-login/background.png);
+    max-width: 60%;
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-r2{
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.lines{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-r{
+    justify-content: flex-start;
+}
+
+.a-text{
+    color: rgb(29, 155, 240);;
+    text-decoration: none;
+}
+
+.thin-text{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: rgb(133, 142, 150);
+    font-family: 'poppins';
+    font-weight: 400;
+}
+
+.rh3{
+    font-family: 'poppins'; 
+    margin-top: 40px;
+}
+
+.btn4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:320px;
+    color: rgb(29, 155, 240);
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    background-color: transparent;
+    border:1px solid gray;
+    border-radius:30px;
+    padding: 8px;
+    font-family: "Poppins";
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 13px;
+}
+
+.btn-google:hover{
+    background-color: rgb(245, 243, 243);
+}
+
+.btn-apple:hover{
+    background-color: rgb(245, 243, 243);
+}
+
+.btn3:hover{
+    background-color: rgba(29, 156, 240, 0.904);
+}
+
+.btn4:hover{
+    background-color: rgba(29, 156, 240, 0.090);
+}
+
+.lower-nav{
+    margin-top: -2px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+      flex-wrap: wrap-reverse;
+      scroll-behavior: smooth;
+    }
+    .font{
+        font-size:40px
+    }
+    .font2{
+        font-size:20px;
+    }
+    .btn-apple{
+        width: 290px;
+    }
+    .btn-google{
+        width: 290px;
+    }
+    .btn3{
+        width: 290px;
+    }
+    .btn4{
+        width: 290px;
+    }
+    .r-109y4c4 {
+        width: 120px;
+    }
+    .container-l{
+        background-image: none;
+    }
+
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
+
+::-webkwit-scrollbar-thumb:hover {
+    background: #555;
+}
