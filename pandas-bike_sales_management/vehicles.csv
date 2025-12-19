@@ -1,0 +1,201 @@
+VehicleID,Brand,Model,Type,EngineCC,Price,Stock
+V001,Honda,Activa 7G,Scooter,110,75000.0,10
+V002,Honda,Dio,Scooter,110,74000.0,10
+V003,Honda,Hornet 2.0,Motorcycle,184,145000.0,7
+V004,Honda,SP 125,Motorcycle,124,95000.0,11
+V005,Honda,Unicorn 160,Motorcycle,162,109000.0,8
+V006,Honda,Livo,Motorcycle,110,87000.0,9
+V007,Honda,CB200X,Adventure,184,160000.0,5
+V008,Honda,CB300R,Motorcycle,286,250000.0,3
+V009,Honda,CB350 Hness,Motorcycle,348,215000.0,5
+V010,Honda,CB Shine,Motorcycle,124,88000.0,10
+V011,Yamaha,FZ-S Fi,Motorcycle,149,120000.0,6
+V012,Yamaha,R15 V4,Motorcycle,155,185000.0,5
+V013,Yamaha,Fascino 125,Scooter,125,91000.0,9
+V014,Yamaha,RayZR 125,Scooter,125,95000.0,8
+V015,Yamaha,MT 15,Motorcycle,155,170000.0,4
+V016,Yamaha,Aerox 155,Scooter,155,135000.0,5
+V017,Yamaha,FZ X,Motorcycle,149,135000.0,6
+V018,Yamaha,R3,Motorcycle,321,390000.0,2
+V019,Yamaha,R7,Superbike,689,910000.0,1
+V020,Yamaha,Tracer 9 GT,Adventure,890,1450000.0,1
+V021,Suzuki,Access 125,Scooter,125,91000.0,13
+V022,Suzuki,Burgman Street,Scooter,125,96000.0,8
+V023,Suzuki,Gixxer 155,Motorcycle,155,135000.0,6
+V024,Suzuki,Gixxer SF,Motorcycle,155,150000.0,5
+V025,Suzuki,Hayabusa,Superbike,1340,1690000.0,2
+V026,Suzuki,V-Strom SX,Adventure,249,225000.0,4
+V027,Suzuki,Intruder 150,Cruiser,155,135000.0,5
+V028,Suzuki,GSX250R,Motorcycle,248,255000.0,3
+V029,Suzuki,Gixxer 250,Motorcycle,249,230000.0,5
+V030,Suzuki,Katana,Superbike,999,1390000.0,1
+V031,Hero,HF Deluxe,Motorcycle,97,64000.0,14
+V032,Hero,Splendor Plus,Motorcycle,97,75000.0,20
+V033,Hero,Passion Pro,Motorcycle,113,82000.0,10
+V034,Hero,Glamour,Motorcycle,124,93000.0,9
+V035,Hero,XPulse 200,Adventure,199,140000.0,5
+V036,Hero,Super Splendor,Motorcycle,124,92000.0,10
+V037,Hero,Destini 125,Scooter,125,85000.0,8
+V038,Hero,Maestro Edge,Scooter,110,84000.0,9
+V039,Hero,XPulse 200T,Motorcycle,199,138000.0,5
+V040,Hero,Karizma XMR,Motorcycle,210,190000.0,3
+V041,TVS,Jupiter,Scooter,110,78000.0,12
+V042,TVS,NTorq 125,Scooter,125,98000.0,10
+V043,TVS,Apache RTR 160,Motorcycle,159,112000.0,7
+V044,TVS,Apache RTR 200 4V,Motorcycle,197,145000.0,6
+V045,TVS,Radeon,Motorcycle,110,75000.0,8
+V046,TVS,Star City Plus,Motorcycle,109,81000.0,10
+V047,TVS,Sport,Motorcycle,99,72000.0,9
+V048,TVS,XL100,Commuter,99,52000.0,12
+V049,TVS,Ronin,Motorcycle,225,168000.0,4
+V050,TVS,Apache RR 310,Superbike,312,290000.0,3
+V051,Bajaj,Platina 110,Motorcycle,115,75000.0,12
+V052,Bajaj,Pulsar 125,Motorcycle,124,97000.0,11
+V053,Bajaj,Pulsar 150,Motorcycle,149,115000.0,9
+V054,Bajaj,Pulsar N160,Motorcycle,164,132000.0,8
+V055,Bajaj,Pulsar NS200,Motorcycle,199,158000.0,7
+V056,Bajaj,Dominar 250,Motorcycle,248,185000.0,5
+V057,Bajaj,Dominar 400,Motorcycle,373,230000.0,4
+V058,Bajaj,CT 110X,Motorcycle,115,71000.0,11
+V059,Bajaj,Avenger 160,Cruiser,160,118000.0,6
+V060,Bajaj,Avenger 220,Cruiser,220,142000.0,5
+V061,Royal Enfield,Bullet 350,Motorcycle,346,170000.0,6
+V062,Royal Enfield,Classic 350,Motorcycle,349,198000.0,5
+V063,Royal Enfield,Hunter 350,Motorcycle,349,175000.0,8
+V064,Royal Enfield,Meteor 350,Cruiser,349,210000.0,6
+V065,Royal Enfield,Himalayan,Adventure,411,280000.0,4
+V066,Royal Enfield,Scram 411,Adventure,411,245000.0,5
+V067,Royal Enfield,Interceptor 650,Motorcycle,648,320000.0,3
+V068,Royal Enfield,Continental GT 650,Motorcycle,648,345000.0,3
+V069,Royal Enfield,Shotgun 650,Cruiser,648,375000.0,2
+V070,Royal Enfield,Himalayan 450,Adventure,452,295000.0,4
+V071,KTM,125 Duke,Motorcycle,124,190000.0,4
+V072,KTM,200 Duke,Motorcycle,199,220000.0,5
+V073,KTM,250 Duke,Motorcycle,249,240000.0,5
+V074,KTM,390 Duke,Motorcycle,398,320000.0,3
+V075,KTM,RC 390,Superbike,398,340000.0,3
+V076,KTM,Adventure 250,Adventure,248,250000.0,3
+V077,KTM,Adventure 390,Adventure,398,345000.0,2
+V078,KTM,RC 200,Motorcycle,199,225000.0,3
+V079,KTM,RC 125,Motorcycle,124,180000.0,4
+V080,KTM,SX-E 3,Electric,0,500000.0,1
+V081,BMW,G310R,Motorcycle,313,290000.0,2
+V082,BMW,G310GS,Adventure,313,330000.0,2
+V083,BMW,S1000RR,Superbike,999,2450000.0,1
+V084,BMW,R1250GS,Adventure,1254,2200000.0,1
+V085,BMW,F900R,Motorcycle,895,970000.0,1
+V086,BMW,M1000RR,Superbike,999,3200000.0,1
+V087,BMW,G310RR,Motorcycle,313,310000.0,2
+V088,Aprilia,SR 160,Scooter,160,134000.0,3
+V089,Aprilia,SR 125,Scooter,125,115000.0,4
+V090,Aprilia,RS 457,Motorcycle,457,410000.0,2
+V091,Aprilia,Tuono 660,Superbike,659,1380000.0,1
+V092,Aprilia,RS 660,Superbike,659,1400000.0,1
+V093,Aprilia,SRV 850,Superbike,839,1600000.0,1
+V094,Vespa,VXL 125,Scooter,125,130000.0,4
+V095,Vespa,SXL 150,Scooter,150,145000.0,4
+V096,Vespa,ZX 125,Scooter,125,128000.0,5
+V097,Vespa,Elettrica,Electric,0,145000.0,2
+V098,TVS,iQube,Electric,0,137000.0,4
+V099,Hero,Vidar e2,Electric,0,89000.0,3
+V100,Ola,S1 Pro,Electric,0,150000.0,7
+V101,Ather,450X,Electric,0,160000.0,5
+V102,Bajaj,Chetak,Electric,0,148000.0,4
+V103,Simple,One,Electric,0,145000.0,3
+V104,Rivian,R1 Bike,Electric,0,175000.0,2
+V105,Ultraviolette,F77,Electric,0,380000.0,2
+V106,Tork,Kratos R,Electric,0,185000.0,2
+V107,Revolt,RV400,Electric,0,150000.0,4
+V108,Okinawa,Okhi 90,Electric,0,140000.0,4
+V109,Ampere,Primus,Electric,0,130000.0,5
+V110,Benelli,Imperiale 400,Motorcycle,374,240000.0,3
+V111,Benelli,TRK 502,Adventure,500,590000.0,2
+V112,Benelli,Leoncino 500,Motorcycle,500,520000.0,2
+V113,Benelli,502C,Cruiser,500,540000.0,1
+V114,Benelli,TNT 600i,Superbike,600,610000.0,1
+V115,Kawasaki,Ninja 300,Motorcycle,296,350000.0,3
+V116,Kawasaki,Ninja 400,Motorcycle,399,520000.0,2
+V117,Kawasaki,Z650,Motorcycle,649,700000.0,2
+V118,Kawasaki,Ninja 650,Motorcycle,649,730000.0,2
+V119,Kawasaki,Versys 650,Adventure,649,770000.0,1
+V120,Kawasaki,Ninja ZX-10R,Superbike,998,1650000.0,1
+V121,Kawasaki,W175,Motorcycle,177,150000.0,4
+V122,Kawasaki,Z900,Superbike,948,1050000.0,1
+V123,Triumph,Speed 400,Motorcycle,398,260000.0,3
+V124,Triumph,Scrambler 400X,Motorcycle,398,280000.0,3
+V125,Triumph,Bonneville T100,Motorcycle,900,1050000.0,1
+V126,Triumph,Trident 660,Motorcycle,660,850000.0,1
+V127,Triumph,Street Twin,Motorcycle,900,940000.0,1
+V128,Triumph,Tiger 660,Adventure,660,990000.0,1
+V129,Harley Davidson,X440,Motorcycle,440,260000.0,3
+V130,Harley Davidson,Iron 883,Cruiser,883,1150000.0,1
+V131,Harley Davidson,Fat Bob,Cruiser,1868,2100000.0,1
+V132,Harley Davidson,Pan America 1250,Adventure,1250,2400000.0,1
+V133,Harley Davidson,Nightster,Cruiser,975,1850000.0,1
+V134,Honda,Hness CB350,Motorcycle,348,220000.0,4
+V135,Honda,Rebel 500,Cruiser,471,510000.0,1
+V136,Honda,CBR500R,Motorcycle,471,560000.0,1
+V137,Honda,CB650R,Motorcycle,648,880000.0,1
+V138,Honda,CBR650R,Superbike,648,940000.0,1
+V139,Honda,Africa Twin,Adventure,1084,1750000.0,1
+V140,Honda,Activa Electric,Electric,0,125000.0,5
+V141,Honda,Grazia 125,Scooter,125,97000.0,8
+V142,Honda,Cliq,Scooter,110,69000.0,6
+V143,Honda,CBR150R,Motorcycle,149,165000.0,3
+V144,Honda,CBR250R,Motorcycle,249,210000.0,3
+V145,Hero,Pleasure Plus,Scooter,110,82000.0,9
+V146,Hero,Electric Sprint,Electric,0,90000.0,4
+V147,Yamaha,Electric Aero,Electric,0,155000.0,3
+V148,Suzuki,E Burgman,Electric,0,160000.0,2
+V149,TVS,Creon,Electric,0,170000.0,2
+V150,Bajaj,Blade E,Electric,0,150000.0,3
+V151,Hero,Dash 125,Scooter,125,92000.0,8
+V152,TVS,Wego,Scooter,110,77000.0,9
+V153,Honda,Activa 125,Scooter,125,88000.0,10
+V154,Yamaha,FZ25,Motorcycle,249,165000.0,4
+V155,Yamaha,FZ X Blue,Motorcycle,149,137000.0,5
+V156,Hero,Ignitor,Motorcycle,125,93000.0,7
+V157,Bajaj,Vikrant 150,Motorcycle,149,120000.0,6
+V158,Bajaj,Boxer 150,Motorcycle,149,95000.0,9
+V159,Suzuki,Zeus 125,Motorcycle,125,89000.0,7
+V160,TVS,Fiero 125,Motorcycle,125,88000.0,8
+V161,KTM,RC 8C,Superbike,889,3200000.0,1
+V162,BMW,CE 04,Electric,0,1600000.0,1
+V163,Yamaha,E01,Electric,0,135000.0,3
+V164,Suzuki,Access E,Electric,0,145000.0,2
+V165,Ola,S1 Air,Electric,0,125000.0,6
+V166,Ather,450S,Electric,0,145000.0,4
+V167,Tork,Kratos,Electric,0,175000.0,3
+V168,Hero,Eddy,Electric,0,72000.0,5
+V169,Okinawa,Ridge Plus,Electric,0,88000.0,4
+V170,Ampere,Magnus Pro,Electric,0,100000.0,5
+V171,Benling,Aura,Electric,0,95000.0,4
+V172,PURE EV,ETrance Neo,Electric,0,85000.0,4
+V173,Revolt,RV300,Electric,0,135000.0,3
+V174,BMW,C400GT,Scooter,350,1100000.0,1
+V175,Honda,CBR1000RR-R,Superbike,999,2900000.0,1
+V176,Honda,Gold Wing Tour,Superbike,1833,3900000.0,1
+V177,Kawasaki,H2,Superbike,998,3600000.0,1
+V178,Kawasaki,H2R,Superbike,998,8000000.0,1
+V179,Ducati,Monster,Motorcycle,937,1260000.0,1
+V180,Ducati,Panigale V2,Superbike,955,1880000.0,1
+V181,Ducati,Panigale V4,Superbike,1103,3000000.0,1
+V182,Ducati,Scrambler Icon,Motorcycle,803,980000.0,1
+V183,Ducati,DesertX,Adventure,937,2100000.0,1
+V184,Triumph,Tiger 900,Adventure,888,1600000.0,1
+V185,Triumph,Speed Twin,Motorcycle,1200,1150000.0,1
+V186,Harley Davidson,Sportster S,Cruiser,1250,1950000.0,1
+V187,Harley Davidson,Breakout,Cruiser,1868,2250000.0,1
+V188,Royal Enfield,Electric 350,Electric,0,185000.0,3
+V189,Yamaha,MT 03,Motorcycle,321,330000.0,2
+V190,KTM,RC 8R,Superbike,889,3400000.0,1
+V191,Bajaj,Freedom Electric,Electric,0,115000.0,4
+V192,Honda,Activa Prime,Scooter,110,85000.0,6
+V193,Hero,Optima CX,Electric,0,97000.0,5
+V194,Ola,S1 X,Electric,0,130000.0,6
+V195,TVS,Apache Electric,Electric,0,210000.0,3
+V196,Simple,Dot,Electric,0,145000.0,2
+V197,Hero,Xoom 110,Scooter,110,89000.0,7
+V198,Suzuki,Zeus E,Electric,0,135000.0,3
+V199,BMW,RnineT,Motorcycle,1170,1900000.0,1
+V200,Royal Enfield,Thunderbird X,Motorcycle,346,200000.0,4
