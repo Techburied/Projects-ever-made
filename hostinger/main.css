@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@100&display=swap');
+
+
+
+body {
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif !important;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    z-index: 2;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    height: 5vh;
+}
+
+.navi {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+    position: relative;
+}
+
+#logo {
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 90px;
+    border-radius: 10px;
+}
+
+.log {
+    padding: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin-right: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lang-btn {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: transparent;
+    border: 2px solid rgb(255, 154, 154);
+    color: rgb(255, 154, 154);
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 7px;
+    margin-right: 800px;
+    transition: 1s;
+    width: 120px;
+    height: 50px;
+}
+
+#lang-btn:hover {
+    font-size: 1.4em;
+    cursor: pointer;
+    background-color: rgb(255, 154, 154);
+    color: #fff;
+}
+
+.bg {
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    /* background-image: url(/bac.png);
+    filter: blur(3px);
+    -webkit-filter: blur(3px); */
+    background-color: rgb(255, 154, 154);
+}
+
+.header-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 32%;
+    left: 30%;
+}
+
+.main-text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.countdown-container {
+    user-select: none;
+    cursor: pointer;
+    z-index: 3;
+    position: fixed;
+    top: 70%;
+    left: 35%;
+    display: flex;
+    flex-direction: row;
+}
+
+.big-text {
+    font-size: 15px;
+    line-height: 1;
+    margin: 0 2rem;
+}
+
+.mr-c-t {
+    text-align: center;
+    margin-left: 15px;
+}
+
+.days-c {
+    border: 10px solid rgb(252, 236, 236);
+    border-radius: 10px;
+    width: 105px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    animation: days 2s;
+}
+
+@keyframes days {
+    0% {
+        transform: scale(1.1);
+    }
+}
+
+.hours-c {
+    border: 10px solid rgb(252, 236, 236);
+    border-radius: 10px;
+    width: 105px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    animation: hours 2s;
+}
+
+@keyframes hours {
+    0% {
+        transform: scale(1.1);
+    }
+}
+
+.mins-c {
+    border: 10px solid rgb(252, 236, 236);
+    border-radius: 10px;
+    width: 105px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    animation: mins 2s;
+}
+
+@keyframes mins {
+    0% {
+        transform: scale(1.1);
+    }
+}
+
+.seconds-c {
+    border: 10px solid rgb(252, 236, 236);
+    border-radius: 10px;
+    width: 105px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    animation: secs 2s;
+}
+
+@keyframes secs {
+    0% {
+        transform: scale(1.1);
+    }
+}
+
+.learn-more{
+    position: absolute;
+    top: 60%;
+    left: 47%;
+}
+
+#learn{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid rgb(252, 236, 236);
+    padding: 15px 10px 15px 10px;
+    border-radius:10px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 1s;
+    font-size: 1rem;
+    width: 130px;
+    height: 60px;
+}
+
+.learn-more:hover #learn{
+    user-select: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: black;
+    background-color:rgb(250, 235, 235);
+    border-radius: 10px;
+    border:2px solid rgb(250,235,235)
+}
+
+.host a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    font-size:1.2em;
+    text-decoration: none;
+    color: rgb(255, 154, 154);
+    transition:.5s;
+}
+
+.host-btn{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#host-bt{
+    color: rgb(255, 154, 154);
+    background-color: transparent;
+    border: 2px solid rgb(255, 154, 154);
+    padding: 12px 10px 12px 10px;
+    border-radius:10px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 1s;
+    font-size: 1rem;
+    width: 130px;
+    height: 60px;
+    margin-right: 15px;
+    margin-top: -5px;
+}
+
+#host-bt:hover{
+    font-size: 1.2rem;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 154, 154);
+    border-radius: 10px;
+    border:2px solid rgb(255, 154, 154);
+}
+
+.btn-google{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 154, 154);
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 154, 154);
+    border-radius:10px;
+    padding: 8px;
+    font-family: "Poppins";
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+    width: 200px;
+    height: 60px;
+}
+
+.header-right{
+    height: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:row;
+}
+
+.btn-google:hover{
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 154, 154);
+    border-radius: 10px;
+    border:2px solid rgb(255, 154, 154);
+}
+
+.host {
+    position: relative;
+    display: inline-block;
+}
+
+.host-links {
+    margin-top: 2px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 95%;
+    left: -30%;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.host-links a:hover {
+    background-color: rgb(255, 154, 154);
+    border-radius: 10px;
+    color:white;
+}
+
+.host:hover .host-links {
+    display: block;
+}
+
+.domain{
+    height:80px;
+    display: flex;
+    align-items: center;
+}
+
+#dom{
+    color: rgb(255, 154, 154);
+    background-color: transparent;
+    border: 2px solid rgb(255, 154, 154);
+    padding: 12px 10px 12px 10px;
+    border-radius:10px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 1s;
+    font-size: 1rem;
+    width: 130px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+#dom:hover{
+    font-size: 1.2rem;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 154, 154);
+    border-radius: 10px;
+    border:2px solid rgb(255, 154, 154);
+}
+
+.dom {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dom-contain{
+    position: relative;
+    display: inline-block;
+}
+
+.dom-contain {
+    margin-top: 2px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 88%;
+    left: 77%;
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dom-contain a {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    font-size:1.2em;
+    text-decoration: none;
+    color: rgb(255, 154, 154);
+    transition:.5s;
+}
+
+.dom-contain a:hover {
+    background-color: rgb(255, 154, 154);
+    border-radius: 10px;
+    color:white;
+}
+
+.domain:hover .dom-contain {
+    display: block;
+}
+
+#login{
+    color: rgb(255, 154, 154);
+    background-color: transparent;
+    border: 2px solid rgb(255, 154, 154);
+    padding: 12px 10px 12px 10px;
+    border-radius:10px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 1s;
+    font-size: 1rem;
+    width: 130px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+#login:hover{
+    font-size: 1.2rem;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 154, 154);
+    border-radius: 10px;
+    border:2px solid rgb(255, 154, 154);
+}
+
+#cart{
+    color: rgb(255, 154, 154);
+    background-color: transparent;
+    border: 2px solid rgb(255, 154, 154);
+    padding: 12px 10px 12px 10px;
+    border-radius:10px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 1s;
+    font-size: 1rem;
+    width: 130px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+#cart:hover{
+    font-size: 1.2rem;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 154, 154);
+    border-radius: 10px;
+    border:2px solid rgb(255, 154, 154);
+}
+
+.cart-svg{
+    transition: 1s;
+}
+
+#cart:hover .cart-svg{
+    fill:white
+}
+
+@media screen and  (max-width: 400px) {
+    .header{
+        width: 375px;
+    }
+    #logo {
+        margin-left: -30px;
+        width: 80px;
+    }
+    #lang-btn {
+        display: none;
+    }
+    #host-bt{
+        width: 110px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-google{
+        width: 110px;
+        height: 40px;
+    }
+    svg{
+        display:none; 
+    }
+    
+}
