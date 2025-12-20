@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Jaipur</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@200&family=Square+Peg&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Poppins:wght@300&family=Square+Peg&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Jaipur</h1>
+        <div class="items">
+            <div class="row1">
+                <div class="temp card mr font-color mb">
+                    <div class="circle c1"></div>
+                    <p class="des common-text temp-text">Temperature</p>
+                    <div id="temp" class="common-text temp-text"></div>
+                </div>
+                <div class="condition card mr font-color mb">
+                    <div class="circle c2"></div>
+                    <p class="des common-text cond-text">Condition</p>
+                    <div id="cond" class="common-text cond-text"></div>
+                </div>
+                <div class="wind card font-color mb">
+                    <div class="circle c3"></div>
+                    <p class="des common-text wind-text">Wind Speed</p>
+                    <div id="wind" class="common-text wind-text"></div>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="press card mr font-color mb">
+                    <div class="circle c4"></div>
+                    <p class="des common-text pressure-text">Pressure (Inch)</p>
+                    <div id="press" class="common-text pressure-text"></div>
+                </div>
+                <div class="humid card mr font-color mb">
+                    <div class="circle c5"></div>
+                    <p class="des common-text humid-text">Humidity</p>
+                    <div id="humid" class="common-text humid-text"></div>
+                </div>
+                <div class="rise card font-color">
+                    <div class="circle c6"></div>
+                    <p class="des common-text humid-text">Sunrise</p>
+                    <div id="rise" class="common-text rise-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>

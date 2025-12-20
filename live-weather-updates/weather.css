@@ -1,0 +1,135 @@
+body{
+    background-image: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823);
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row1,.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row1{
+    margin-bottom: 20px;
+}
+
+.font-color{
+    color: #fff;
+}
+
+.card{
+    height: 35vh;
+    width: 30vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5%;
+    background-color: #121212;
+}
+
+.circle{
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    transition: all .5s ease;
+    position: absolute;
+    top: -30%;
+    left: 75%;
+    border: none;
+}
+
+.card:hover .circle{
+    scale: 10;
+}
+
+.mr{
+    margin-right: 20px;
+}
+
+.c1{
+    background-color: #f9b234;
+}
+.c2{
+    background-color: #3ecd5e;
+}
+.c3{
+    background-color: #e44002;
+}
+.c4{
+    background-color: #952aff;
+}
+.c5{
+    background-color: #cd3e94;
+}
+.c6{
+    background-color: #4c49ea;
+}
+
+h1{
+    font-family: 'lato';
+    font-size: 3em;
+}
+
+.common-text{
+    font-family: 'lato';
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    transition: .5s;
+}
+
+.des{
+    font-size: 1.8em;
+}
+
+
+.card:hover .common-text{
+    color: #121212;
+}
+@media screen and (max-width: 430px){
+    .row1,.row2{
+        flex-direction: column;
+    }
+    .row1{
+        margin-bottom: 0px;
+    }
+    .mr{
+        margin-right: 0px;
+    }
+    body{
+        background-repeat: round;
+    }
+
+    .card{
+        height: 27vh;
+        width: 30vh;
+        user-select: none;
+    }
+    .mb{
+        margin-bottom: 20px;
+    }
+    h1{
+        color: #fff;
+    }
+    .common-text{
+        top: 8%;
+    }
+    .circle{
+        top: -45%;
+    }
+}
