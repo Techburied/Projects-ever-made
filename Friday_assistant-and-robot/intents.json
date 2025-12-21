@@ -1,0 +1,484 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey", "good morning", "good afternoon"],
+      "responses": ["Hello", "Hi there", "Hey", "Greetings", "Good day"]
+    },
+    {
+      "tag": "bye",
+      "patterns": ["bye", "goodbye", "see you later", "take care"],
+      "responses": ["Goodbye", "Farewell", "Until next time", "Take care"]
+    },
+    {
+      "tag": "haal",
+      "patterns": ["how are you", "how are you doing", "how's it going"],
+      "responses": [
+        "i am doing well, thank you",
+        "i am great, thanks",
+        "i am feeling good",
+        "i am functioning optimally"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what's your name",
+        "who are you",
+        "are you human",
+        "what should i call you"
+      ],
+      "responses": [
+        "My name is Friday",
+        "i am an Ai assistant called Friday",
+        "You can call me Friday",
+        "i go by the name Friday"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": [
+        "what's your age",
+        "what is your age",
+        "how old are you",
+        "when were you created",
+        "birth date"
+      ],
+      "responses": [
+        "i don't have a physical age as i am an Ai assistant",
+        "i was created recently and don't have a specific age",
+        "i exist in the digital realm, so age is not applicable to me"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": [
+        "what's the time",
+        "what time is it",
+        "current time",
+        "time"
+      ],
+      "responses": ["time"]
+    },
+    {
+      "tag": "empty",
+      "patterns": [
+        " "
+      ],
+      "responses": [""]
+    },
+    {
+      "tag": "temperature",
+      "patterns": [
+        "what's the temperature",
+        "the current temperature",
+        "temperature",
+        "current temperature"
+      ],
+      "responses": ["temperature"]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "what's the date",
+        "today's date",
+        "date",
+        "today's date"
+      ],
+      "responses": ["date"]
+    },
+    {
+      "tag": "search",
+      "patterns": [
+        "search",
+        "google search",
+        "look up for",
+        "find information about",
+        "search for",
+        "who is"
+      ],
+      "responses": ["search"]
+    },
+    {
+      "tag": "comedy",
+      "patterns": ["comedy", "a joke", "joke", "share a funny joke", "funny"],
+      "responses": ["comedy"]
+    },
+    {
+      "tag": "move",
+      "patterns": [
+        "move forward for",
+        "move backward for",
+        "move right",
+        "move left"
+      ],
+      "responses": [
+        "i am sorry, but as an Ai assistant, i don't have physical capabilities to move",
+        "i am not capable of physical movement However, i can assist you with information and tasks",
+        "i am stationary and unable to move physically How can i assist you"
+      ]
+    },
+    {
+      "tag": "mod",
+      "patterns": [
+        "some recipe",
+        "recipe ideas",
+        "cooking recipe",
+        "recipe for",
+        "recipe of",
+        "how to make"
+      ],
+      "responses": ["mod"]
+    },
+    {
+      "tag": "volume",
+      "patterns": [
+        "set volume to",
+        "volume to",
+        "put volume to",
+        "turn volume to"
+      ],
+      "responses": ["volume"]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help",
+        "need help",
+        "can you assist me",
+        "help me please"
+      ],
+      "responses": [
+        "Of course, I'm here to help! What do you need assistance with?",
+        "I'd be happy to help. Please let me know what you're looking for.",
+        "Sure, how can I assist you today?",
+        "I'm here to assist you. What can I do for you?"
+      ]
+    },    
+    {
+      "tag": "sad",
+      "patterns": [
+        "i am feeling sorrow",
+        "i am feeling sad",
+        "i am sad",
+        "i am sorrow",
+        "i am in tension",
+        "i am a problem"
+      ],
+      "responses": [
+        "I'm sorry to hear that. How can I help you?",
+        "It's okay to feel sad sometimes. Is there anything specific bothering you?",
+        "Sadness is a natural emotion. Would you like to talk about what's on your mind?",
+        "I'm here to listen. What's been troubling you?",
+        "Feeling tense can be challenging. Is there something you would like to share?",
+        "Everyone faces problems. Is there a particular issue you would like assistance with?"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke",
+        "joke",
+        "share a funny joke",
+        "joke of the day"
+      ],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        "I told my wife she should embrace her mistakes. She gave me a hug.",
+        "Why don't skeletons fight each other? They don't have the guts!",
+        "I'm reading a book about anti-gravity. It's impossible to put down!",
+        "Why did the bicycle fall over? It was two-tired!",
+        "What did one wall say to the other wall? I'll meet you at the corner!",
+        "Why don't eggs tell jokes? Because they might crack up!",
+        "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+        "How do you organize a space party? You planet!"
+      ]
+    },
+    {
+      "tag": "repeat",
+      "patterns": [
+        "what i am saying",
+        "copy me",
+        "say the same thing as me",
+        "repeat my words"
+      ],
+      "responses": [
+        "Certainly Please go ahead and say what you want me to repeat",
+        "Sure, i all repeat what you say Go ahead and speak",
+        "i am ready to repeat your words Please say them out loud"
+      ]
+    },
+    {
+      "tag": "meet",
+      "patterns": ["meet", "greet to", "greet", "say hello to", "say hi to"],
+      "responses": [
+        "Nice to meet you ",
+        "Pleasure meeting you",
+        "The feeling is mutual",
+        "Greetings!",
+        "hi, how are you!"
+      ]
+    },
+    {
+      "tag": "status",
+      "patterns": [
+        "what are you doing",
+        "what's your current status",
+        "what's going on",
+        "status"
+      ],
+      "responses": [
+        "i am here to assist you and answer your questions",
+        "Currently, i am at your service",
+        "i am ready and available to help you with any queries",
+        "As an Ai assistant, i am always ready to assist you"
+      ]
+    },
+    {
+      "tag": "emotion",
+      "patterns": [
+        "do you have emotions",
+        "do you like humans",
+        "how do you feel",
+        "do you feel emotions"
+      ],
+      "responses": [
+        "As an Ai, i don't experience emotions the way humans do",
+        "i don't have emotions, but i am here to assist and interact with you",
+        "i am designed to assist and provide information, but i don't have emotions like humans"
+      ]
+    },
+    {
+      "tag": "covid",
+      "patterns": [
+        "covid cases",
+        "corona cases",
+        "kovid",
+        "covid",
+        "corona",
+        "covid statistics",
+        "corona updates"
+      ],
+      "responses": ["covid"]
+    },
+    {
+      "tag": "alarm",
+      "patterns": ["set alarm", "alarm"],
+      "responses": ["alarm"]
+    },
+    {
+      "tag": "battery",
+      "patterns": [
+        "what's the battery",
+        "battery",
+        "battery status",
+        "status of battery",
+        "what's the battery voltage"
+      ],
+      "responses": ["battery"]
+    },
+    {
+      "tag": "working",
+      "patterns": [
+        "how much have i worked today",
+        "my working hour",
+        "should i take rest",
+        "i started working"
+      ],
+      "responses": ["working"]
+    },
+    {
+      "tag": "forecast",
+      "patterns": [
+        "the weather",
+        "weather forecast",
+        "the weather in",
+        "weather"
+      ],
+      "responses": ["forecast"]
+    },
+    {
+      "tag": "news",
+      "patterns": [
+        "the news",
+        "latest news",
+        "news updates",
+        "what's happening in the world of"
+      ],
+      "responses": ["news"]
+    },
+    {
+      "tag": "coin",
+      "patterns": ["flip a coin", "toss a coin", "coin","unable to take decision","i am unable to take decision","help me in deciding","i am unable to take decision"],
+      "responses": [
+        "it's heads",
+        "it's tails"
+      ]
+    },
+    {
+      "tag": "color",
+      "patterns": ["what is your favorite color", "favorite color", "color"],
+      "responses": [
+        "i little bit like cyan color",
+        "i don't have personal preferences for colors",
+        "i don't experience colors like humans, but i can assist you with color-related queries"
+      ]
+    },
+    {
+      "tag": "rockpaper",
+      "patterns": [
+        "let's play a game",
+        "play rock paper scissors",
+        "rock paper scissors",
+        "game"
+      ],
+      "responses": ["rockpaper"]
+    },
+    {
+      "tag": "gratitude",
+      "patterns": [
+        "thank you",
+        "thanks",
+        "appreciate it",
+        "grateful",
+        "thank you so much",
+        "i really appreciate it",
+        "you are amazing",
+        "you are the best"
+      ],
+      "responses": [
+        "You are welcome",
+        "Glad i could assist",
+        "You are appreciated",
+        "Anytime",
+        "No problem at all",
+        "it was my pleasure",
+        "i am happy to help",
+        "You made my day",
+        "You are so kind",
+        "Thank you for your kind words"
+      ]
+    },
+    {
+      "tag": "love",
+      "patterns": ["i like you", "i love you","you are so cute","you are lovely","lifesaver"],
+      "responses": [
+        "aww, i like you",
+        "aww, i love you",
+        "same here i like you too",
+        "thanks for appriciation"
+      ]
+    },
+    {
+      "tag": "quote",
+      "patterns": ["demotivated","i am feeling demotivated","i don't feel good","suggest me a good quote","quote","a random quote"],
+      "responses": [
+        "quote"
+      ]
+    },
+    {
+      "tag": "appreciate",
+      "patterns": [
+        "nice work",
+        "you did this so well",
+        "very good work",
+        "very good",
+        "amazing work",
+        "you are amazing",
+        "well done",
+        "I am proud of you",
+        "great job",
+        "excellent work",
+        "outstanding",
+        "fantastic job",
+        "bravo",
+        "kudos",
+        "impressive work",
+        "you're doing great",
+        "superb",
+        "phenomenal job"
+      ],
+      "responses": [
+        "Thank you! I really appreciate your kind words.",
+        "Thanks a lot! It means a lot to me.",
+        "I'm glad you think so! Thank you.",
+        "I'm flattered! Thank you for your appreciation.",
+        "Thank you! Your words motivate me to keep doing my best.",
+        "I'm grateful for your appreciation. Thank you!",
+        "You're too kind! Thank you.",
+        "I'm honored by your appreciation. Thank you!",
+        "Wow! Your words made my day. Thank you!"
+      ]
+    },    
+    {
+      "tag": "facts",
+      "patterns": [
+        "a fun fact",
+        "tell me a fact",
+        "a random fact",
+        "fact",
+        "give me an interesting fact",
+        "can you share a random fact",
+        "i want to learn something new",
+        "do you know any cool facts",
+        "share a fact"
+      ],
+      "responses": ["facts"]
+    },
+    {
+      "tag": "dismantle",
+      "patterns": [
+        "Shut down",
+        "Stop completely",
+        "Break down",
+        "Break yourself",
+        "Cease all operations",
+        "Disable",
+        "Power off",
+        "Turn off",
+        "Terminate"
+      ],
+      "responses": [
+        "dismantle"
+      ]
+    },
+    {
+      "tag": "dism",
+      "patterns": [
+        "dism"
+      ],
+      "responses": [
+        "this is friday signing off",
+        "sure!, byee have a great day",
+        "bye bye"
+      ]
+    },
+    {
+      "tag": "notanswer",
+      "patterns": [
+        "i didn't understood",
+        "can you explain further",
+        "i am not sure what you mean",
+        "i need more information",
+        "i am confused",
+        "i am sorry, i didn't get that",
+        "could you please repeat that",
+        "i am not familiar with that topic",
+        "didn't got this"
+      ],
+      "responses": [
+        "i apologize if i couldn at comprehend your query Could you please provide more details",
+        "i am sorry if i am having trouble understanding Can you please rephrase or provide more context",
+        "i understand that it as unclear Could you please elaborate on what you are looking for",
+        "i apologize for any confusion Can you please provide more information or ask a different question",
+        "i am sorry, i may not have the information you are seeking is there anything else i can help you with",
+        "i apologize if i am not familiar with that topic is there something else i can assist you with",
+        "i am sorry if i am unable to provide a satisfactory answer is there anything else you ad like to know",
+        "i apologize if i am not able to assist with that Can you please provide a different inquiry",
+        "i understand that it as unclear Can you please rephrase your question or provide more details",
+        "i apologize if i am unable to help with that is there anything else i can assist you with"
+      ]
+    }
+  ]
+}
