@@ -35,8 +35,10 @@ These projects are 100% authenticate and solely made by me WITHOUT any use of AI
 8. Portfolio Website - https://portritsu.netlify.app/ : This is my personal portfolio website which displays all my achievements and awards (both academic and non-academic), Projects that i have built, my hobbies and other skills such as guitar, video editing, etc.
 9. Robot-control-app: This shows my ability of self learning because i had to learn from scratch about building apps since i did not have any knowledge of it.
 
-Dictionary:
-<img width="1037" height="230" alt="Screenshot 2026-07-13 182721" src="https://github.com/user-attachments/assets/2b1cb084-2450-44e2-9cb3-be493e298078" />
+Robot's app named robodroid: homepage, main page for controll and human following control page (feature to be added in future):
+<img width="1200" height="540" alt="WhatsApp Image 2026-07-13 at 6 42 32 PM (1)" src="https://github.com/user-attachments/assets/b88ed638-72cb-4dcf-bbe6-e954aadcddcc" />
+<img width="1200" height="540" alt="WhatsApp Image 2026-07-13 at 6 42 32 PM" src="https://github.com/user-attachments/assets/79ba02a5-1eaa-4ad9-b0f3-fa7971ab4469" />
+<img width="1200" height="540" alt="WhatsApp Image 2026-07-13 at 6 42 31 PM" src="https://github.com/user-attachments/assets/ea2e3c38-56b8-42c2-aa03-7168744e45e5" />
 
 Weather Website:
 <img width="960" height="794" alt="Screenshot 2026-07-13 182741" src="https://github.com/user-attachments/assets/035c1aec-bf94-42cc-823f-2813579f1b18" />
