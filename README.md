@@ -25,7 +25,7 @@ These projects are 100% authenticate and solely made by me WITHOUT any use of AI
    3. Arduino UNO
 
 2. Dictionary Website: This projects shows my skill of word search using dictionary API in JavaScript.
-3. Hostinger, snapchat login clone and twitter clone: this shows my understanding of UI as well as control of html and css skills
+3. Snapchat login clone and twitter clone: this shows my understanding of UI as well as control of html and css skills
 4. Live Weather Updates: This project shows my html, css and JS skills of using weather APIs.
 5. Bike Sales Management: This shows my data analytical skills in python using Pandas module
 6. Payment Forms: This shows my understanding of basics of html and css which are crucial for bigger and advanced projects.
