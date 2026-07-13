@@ -1,4 +1,4 @@
-char t;
+char t = 'S';
 int frontIr = A4;
 int backIr = A5;
 

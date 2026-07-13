@@ -144,99 +144,102 @@ def TaskexeMain():
                         if tag == intent["tag"]:
                             reply = random.choice(intent["responses"])
                             # print(inten`ts)
-                            if "time" in reply:
-                                NonInputExecution(reply)
+                            try:
+                                if "time" in reply:
+                                    NonInputExecution(reply)
 
-                            elif "date" in reply:
-                                NonInputExecution(reply)
+                                elif "date" in reply:
+                                    NonInputExecution(reply)
 
-                            elif "temperature" in reply:
-                                NonInputExecution(reply)
+                                elif "temperature" in reply:
+                                    NonInputExecution(reply)
 
-                            elif "mod" in reply:
-                                InputExecution(reply, result)
+                                elif "mod" in reply:
+                                    InputExecution(reply, result)
 
-                            elif "search" in reply:
-                                InputExecution(reply,result)
-                            
-                            elif 'repeat' in reply:
-                                speak("speak!")
-                                jj = takecommand()
-                                speak(f"You Said: {jj}")
-                            
-                            elif 'meet' in reply:
-                                result = str(result).replace("ok","").replace("meet","").replace("say hello to","").replace("say hi to","").replace(" to","").replace("greet","")
-                                speak(reply+result)
-                                wavehand()
-
-                            elif "covid" in reply:
-                                InputExecution(reply, result)
+                                elif "search" in reply:
+                                    InputExecution(reply,result)
                                 
-                            elif "battery" in reply:
-                                NonInputExecution(reply)
+                                elif 'repeat' in reply:
+                                    speak("speak!")
+                                    jj = takecommand()
+                                    speak(f"You Said: {jj}")
+                                
+                                elif 'meet' in reply:
+                                    result = str(result).replace("ok","").replace("meet","").replace("say hello to","").replace("say hi to","").replace(" to","").replace("greet","")
+                                    speak(reply+result)
+                                    wavehand()
 
-                            elif "alarm" in reply:
-                                NonInputExecution(reply)
+                                elif "covid" in reply:
+                                    InputExecution(reply, result)
+                                    
+                                elif "battery" in reply:
+                                    NonInputExecution(reply)
 
-                            elif "heads" in reply or "tails" in reply:
-                                ser.write(b'q')
-                                ser.write(b'X')
-                                os.system("mpg123 coin.wav")
-                                speak(reply)
-                                ser.write(b'b')
-                                ser.write(b'X')
+                                elif "alarm" in reply:
+                                    NonInputExecution(reply)
 
-                            elif "working" in reply:
-                                NonInputExecution(reply)
+                                elif "heads" in reply or "tails" in reply:
+                                    ser.write(b'q')
+                                    ser.write(b'X')
+                                    os.system("mpg123 coin.wav")
+                                    speak(reply)
+                                    ser.write(b'b')
+                                    ser.write(b'X')
 
-                            elif "facts" in reply:
-                                NonInputExecution(reply)
+                                elif "working" in reply:
+                                    NonInputExecution(reply)
 
-                            elif "quote" in reply:
-                                NonInputExecution(reply)
-                            
-                            elif "comedy" in reply:
-                                NonInputExecution(reply)
+                                elif "facts" in reply:
+                                    NonInputExecution(reply)
 
-                            elif "forecast" in reply:
-                                InputExecution(reply, result)
+                                elif "quote" in reply:
+                                    NonInputExecution(reply)
+                                
+                                elif "comedy" in reply:
+                                    NonInputExecution(reply)
 
-                            elif "news" in reply:
-                                InputExecution(reply, result)
-                            
-                            elif "coin" in reply:
-                                speak(reply,intent)
+                                elif "forecast" in reply:
+                                    InputExecution(reply, result)
 
-                            elif "colour" in reply:
-                                speak(reply)
+                                elif "news" in reply:
+                                    InputExecution(reply, result)
+                                
+                                elif "coin" in reply:
+                                    speak(reply,intent)
 
-                            elif "rockpaper" in reply:
-                                InputExecution(reply, result)
+                                elif "colour" in reply:
+                                    speak(reply)
 
-                            elif "volume" in reply:
-                                InputExecution(reply, result)
+                                elif "rockpaper" in reply:
+                                    InputExecution(reply, result)
 
-                            elif "move" in reply:
-                                n = int(re.sub(r'\D',"", result))
+                                elif "volume" in reply:
+                                    InputExecution(reply, result)
 
-                                if "forward" in result:
-                                    forward(n)
+                                elif "move" in reply:
+                                    n = int(re.sub(r'\D',"", result))
 
-                                elif "backward" in result:
-                                    backward(n)
+                                    if "forward" in result:
+                                        forward(n)
 
-                                elif "left" in result:
-                                    left(n)
+                                    elif "backward" in result:
+                                        backward(n)
 
-                                elif "right" in result:
-                                    right(n)
-                            
-                            elif "dismantle" in reply:
-                                speak(random.choice(intents["intents"][36]["responses"]))
-                                exit()
+                                    elif "left" in result:
+                                        left(n)
 
-                            else:
-                                speak(reply)
+                                    elif "right" in result:
+                                        right(n)
+                                
+                                elif "dismantle" in reply:
+                                    speak(random.choice(intents["intents"][36]["responses"]))
+                                    exit()
+
+                                else:
+                                    speak(reply)
+                            except:
+                                speak("Sorry, I am not able to perform this task right now")
         else:
             pass
 

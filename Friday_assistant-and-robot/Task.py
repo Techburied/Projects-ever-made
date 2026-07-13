@@ -1,11 +1,13 @@
+import psutil
 import wikipedia,datetime,bs4,requests,time,random,os
 import serial.tools.list_ports
 from GoogleNews import GoogleNews
+import wikipediaapi
 from speak import speak
 import speech_recognition as sr
 from pywikihow import search_wikihow
 import pyjokes as jo
-import threading
+import re
 
 def takecommand():
     r = sr.Recognizer()
@@ -58,13 +60,16 @@ def Temp():
             speak("no problem")
 
 def get_random_fun_fact():
-    url = "https://useless-facts.sameerkumar.website/api"
-    response = requests.get(url)
-    if response.status_code == 200:
-        fact = response.json()["data"]
-        return fact
-    else:
-        return "Failed to fetch a fun fact"
+    try:
+        url = "https://useless-facts.sameerkumar.website/api"
+        response = requests.get(url)
+        if response.status_code == 200:
+            fact = response.json()["data"]
+            return fact
+        else:
+            return "Failed to fetch a fun fact"
+    except:
+        return "An error occurred while fetching a fun fact"
 
 def joke():
     joke = jo.get_joke(category='neutral')
@@ -132,13 +137,16 @@ def set_alarm():
 def battery():
     import psutil
     battery = psutil.sensors_battery()
-    per = battery.percent
-    plug = battery.power_plugged
-    if plug == True: status = "charging"
-    else: status = "not charging"
-    speak(f"battery is currently {status} with {per} percent")
-    if per < 30:
-        speak("you should charge your device")
+    if battery is None:
+        speak("No battery detected.")
+    else:
+        per = battery.percent
+        status = "charging" if battery.power_plugged else "not charging"
+
+        speak(f"Battery is currently {status} with {per} percent.")
+
+        if per < 30 and not battery.power_plugged:
+            speak("You should charge your device.")
 
 def boot():
     import psutil
@@ -156,42 +164,50 @@ def quote():
     speak(f"{quote}")
 
 def NonInputExecution(query):
-    query = str(query)
+    try:
+        query = str(query)
 
-    if "comedy" in query:
-        joke()
+        if "comedy" in query:
+            joke()
 
-    elif "time" in query:
-        Time()
+        elif "time" in query:
+            Time()
 
-    elif "date" in query:
-        Date()
+        elif "date" in query:
+            Date()
 
-    elif "facts" in query:
-        random_fact = get_random_fun_fact()
-        speak(random_fact)
+        elif "facts" in query:
+            random_fact = get_random_fun_fact()
+            speak(random_fact)
 
-    elif "temperature" in query:
-        Temp()
-        
-    elif "alarm" in query:
-        set_alarm()
+        elif "temperature" in query:
+            Temp()
+            
+        elif "alarm" in query:
+            set_alarm()
 
-    elif "battery" in query:
-        battery()
+        elif "battery" in query:
+            battery()
 
-    elif "working" in query:
-        boot()
+        elif "working" in query:
+            boot()
 
-    elif "quote" in query:
-        quote()
-
+        elif "quote" in query:
+            quote()
+    except:
+        speak("sorry boss, i am not able to fulfill your request at the moment")
+        return
 def InputExecution(tag,query):
 
     if "search" in tag:
-        query = str(query).replace("search","").replace("what is","").replace("is","").replace("who is","").replace("query","").replace("can you tell me","").replace("ok","").replace("me","")
-        page = wikipedia.summary(query, sentences=3)
-        speak(page)
+        from ddgs import DDGS
+        def search(query):
+            with DDGS() as ddgs:
+                result = ddgs.text(query, max_results=2)[0]
+                return result["body"]
+        result = search(query)
+        print(result)
+        speak(result)
 
     elif "covid" in tag:
         countries = str(query).replace("corona cases in","").replace("covid cases in","").replace("ok","").replace(" ","").replace("covid","").replace("corona","")
@@ -211,7 +227,23 @@ def InputExecution(tag,query):
             speak("no data found")
 
     elif "forecast" in tag:
-        p = str(query).replace("tell me the","").replace("forecast","").replace("weather","").replace("what is the","").replace("can you tell me the","").replace("of","").replace("at","").replace("ok","").replace("in","").replace(" ","")
+        keywords = [
+            "can you tell me the",
+            "what is the",
+            "forecast",
+            "weather",
+            "tell me the",
+            "of",
+            "at",
+            "in",
+            "ok",
+        ]
+
+        p = query.lower()
+        for word in keywords:
+            p = p.replace(word, "")
+
+        p = " ".join(p.split())
         api = "https://api.openweathermap.org/data/2.5/weather?q="+p+"&appid=06c921750b9a82d8f5d1294e1586276f"
         
         json_data = requests.get(api).json()
@@ -247,13 +279,19 @@ def InputExecution(tag,query):
             speak("no problem!")
 
     elif 'news' in tag:
-        query = str(query).replace("news of", "").replace("tell me", "").replace("can you", "").replace("the","").replace("what is","").replace("latest","").replace(" ","")
+        query = str(query).replace("news of", "").replace("tell me", "").replace("can you", "").replace("what is","").replace("latest","").replace(" ","")
         googlenews = GoogleNews()
         speak(f'Getting news of {query}')
         googlenews.get_news(query)
         googlenews.result()
         a = googlenews.gettext()
-        speak(a[1:5])
+        for headline in a[:5]:
+            try:
+                print(headline)
+                speak(headline)
+                return
+            except:
+                speak("sorry boss, i am not able to find this")
 
     elif "rockpaper" in tag:
         while True:
@@ -274,8 +312,11 @@ def InputExecution(tag,query):
                 possible_actions = ["rock", "paper", "scissors"]
                 computer_action = random.choice(possible_actions)
                 if user_action not in possible_actions:
-                    speak("I didn't understand. Please try again with a different weapon.")
-                    user_action = takecommand()
+                    try:
+                        speak("Invalid input. Please choose rock, paper, or scissors.")
+                        user_action = takecommand()
+                    except:
+                        speak("sorry boss, i am not able to find this")
 
                 speak(f"\nYou choose {user_action}, and i choose {computer_action}.\n")
                 if user_action == computer_action:
@@ -341,20 +382,25 @@ def InputExecution(tag,query):
 
     elif "volume" in tag:
         import re
-        n = int(re.sub(r'\D',"", query))
-
-        if n < 100:
-            if n < 10:
-                n = f"0.0{n}"
-            else:
-                n = f"0.{n}"
-        if n == "100":
-            n = "1"
         from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
-        devices = AudioUtilities.GetSpeakers()
-        interface = devices.Activate(IAudioEndpointVolume._iid_, 0, None)
-        volume = interface.QueryInterface(IAudioEndpointVolume)
-        volume.SetMasterVolumeLevelScalar(float(n), None)
+        from comtypes import CLSCTX_ALL
+        n = int(re.sub(r"\D", "", query))
 
-        n = str(float(n) * 100).replace(".0", "")
-        speak(f"Volume Set to {n} percent")
+        # Clamp between 0 and 100
+        n = max(0, min(n, 100))
+
+        scalar = n / 100.0
+
+        devices = AudioUtilities.GetSpeakers()
+        interface = devices.Activate(
+            IAudioEndpointVolume._iid_,
+            CLSCTX_ALL,
+            None
+        )
+        volume = interface.QueryInterface(IAudioEndpointVolume)
+
+        volume.SetMasterVolumeLevelScalar(scalar, None)
+
+        speak(f"Volume set to {n} percent")
+
+# NonInputExecution('battery')
