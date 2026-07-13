@@ -34,3 +34,32 @@ These projects are 100% authenticate and solely made by me WITHOUT any use of AI
 7. Pomodoro with Music - https://techpom.netlify.app/ : This shows my understanding of html, css and JS at advanced levels. Along with using API to integrate yt in it. link to visit it: https://techpom.netlify.app/
 8. Portfolio Website - https://portritsu.netlify.app/ : This is my personal portfolio website which displays all my achievements and awards (both academic and non-academic), Projects that i have built, my hobbies and other skills such as guitar, video editing, etc.
 9. Robot-control-app: This shows my ability of self learning because i had to learn from scratch about building apps since i did not have any knowledge of it.
+
+Dictionary:
+<img width="1037" height="230" alt="Screenshot 2026-07-13 182721" src="https://github.com/user-attachments/assets/2b1cb084-2450-44e2-9cb3-be493e298078" />
+
+Weather Website:
+<img width="960" height="794" alt="Screenshot 2026-07-13 182741" src="https://github.com/user-attachments/assets/035c1aec-bf94-42cc-823f-2813579f1b18" />
+
+Bike sales management small demo along with data visualization sample:
+<img width="701" height="519" alt="Screenshot 2026-07-13 182933" src="https://github.com/user-attachments/assets/3ae6f115-3c45-4542-bcb4-e0415a40fbfe" />
+<img width="783" height="553" alt="Screenshot 2026-07-13 182945" src="https://github.com/user-attachments/assets/a71a14c9-3b98-4be8-aaf8-bb291b9eb177" />
+<img width="304" height="261" alt="Screenshot 2026-07-13 182954" src="https://github.com/user-attachments/assets/be10739a-ab98-451c-970e-3e522389ab70" />
+<img width="800" height="500" alt="Figure_1" src="https://github.com/user-attachments/assets/793cac79-2d73-42d1-a987-0c8098f18f6b" />
+
+Twitter clone:
+<img width="1907" height="912" alt="Screenshot 2026-07-13 183128" src="https://github.com/user-attachments/assets/5a564231-88b3-4c5e-9cda-ccfacc1428e2" />
+
+Pomodoro website live music:
+<img width="1902" height="908" alt="Screenshot 2026-07-13 183101" src="https://github.com/user-attachments/assets/626d3582-e60c-4a66-8fe9-075cda243356" />
+
+Snapchat login page clone:
+<img width="1881" height="905" alt="Screenshot 2026-07-13 183117" src="https://github.com/user-attachments/assets/26fd9309-5316-49bd-bf1e-72ce1e17e2bb" />
+
+Payment form using pure html:
+<img width="1886" height="690" alt="Screenshot 2026-07-13 183046" src="https://github.com/user-attachments/assets/bce2516f-5548-472a-930a-a4a6bfb89cec" />
+
+
+
+
+
